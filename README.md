@@ -24,6 +24,7 @@ Projekt nastaja v okviru študijskega predmeta **TIDS – integracija storitev**
 - [Viri in omejitve](#viri-in-omejitve)
 - [XML & JSON Data Integration Assignment](#xml--json-data-integration-assignment)
 - [NHL News Parser](#nhl-news-parser)
+- [Open Data / PC-Axis](#open-data--pc-axis)
 
 ## Glavne funkcionalnosti
 
@@ -346,6 +347,21 @@ data/parsed/nhl_news.json
 ```
 
 Več informacij je v [dokumentaciji parserja](docs/PARSER.md).
+
+## Open Data / PC-Axis
+
+Pot `/open-data` prikazuje evropske odprte podatke o španskem federiranem
+športu. Aplikacija ob odprtju strani dinamično prebere originalno datoteko
+PC-Axis (`.px`) z uporabo Px.js, iz njenih metapodatkov sestavi filtre ter
+rezultate vizualizira s Chart.js. Privzeti pogled uporablja kategorijo
+`Deportes de Hielo`, ki predstavlja širšo skupino športov na ledu in ne samo
+hokeja na ledu. V navigaciji je na voljo preklop med angleškim in španskim
+uporabniškim vmesnikom (`EN / ES`).
+
+Vir je dataset `D00000000505003`, ki ga objavlja Ministerio de Educación,
+Formación Profesional y Deportes in je katalogiziran na data.europa.eu.
+Podrobnosti o viru, parserju, obdelavi, medletnem izračunu in grafih so v
+[dokumentaciji Naloge 3](docs/NALOGA3-ODPRTI-PODATKI.md).
 
 ## Viri in omejitve
 
